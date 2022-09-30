@@ -61,9 +61,43 @@ position: inherit;
 .project{
     height:60vh;
     border-bottom: 1px red solid;
+    width:90%;
+    margin-left: 5%;
+
+}
+.project h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+}
+.box{
+    border: 1px black ridge;
+    height: 10rem;
+
+    
 }
 
 .contact{
     height:60vh;
     border-bottom: 1px red solid;
+}
+.contact h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.contact form{
+ margin-top: 10%;
+}
+.column-centered{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.label{
+    margin-right: 2%;
 }
