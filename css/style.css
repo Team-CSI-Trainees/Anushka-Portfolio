@@ -9,6 +9,7 @@ height: 100vh;
 width: 90vw;
 margin-left: 5vw;
 border-bottom: 1px red solid;
+background: url(../images/cat-han-W_5Eakb1598-unsplash.jpg);
 }
 nav{
     display: flex;
@@ -34,7 +35,67 @@ ul li a{
     margin-top: 15px;
     margin-left: 40px;
 }
-/*=========================================CONTENT=========================================*/
+.name{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.first-name span{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 100px;
+    color:#fff;
+    animation: mover 6s linear infinite;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(0,0,0,0.5);
+        transform: translateY(30px);
+
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+}
+.last-name span{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #fff;
+    animation: mover 6s linear infinite;
+}
+span:nth-child(1){
+    animation-delay: 0.5s;
+}
+span:nth-child(2){
+    animation-delay: 1.0s;
+}
+span:nth-child(3){
+    animation-delay: 1.5s;
+}
+span:nth-child(4){
+    animation-delay: 2.0s;
+}
+span:nth-child(5){
+    animation-delay: 2.5s;
+}
+span:nth-child(6){
+    animation-delay: 3.0s;
+}
+span:nth-child(7){
+    animation-delay: 3.5s;
+}
+span:nth-child(8){
+    animation-delay: 4.0s;
+}
+
+/*========================================CONTENT=========================================*/
 .two{
 width: 90vw;
 margin-left: 5vw;
@@ -59,10 +120,11 @@ position: inherit;
    margin-top:15%;
 }
 .project{
-    height:60vh;
+    height:100vh;
     border-bottom: 1px red solid;
     width:90%;
     margin-left: 5%;
+
 
 }
 .project h1{
@@ -70,6 +132,7 @@ position: inherit;
     font-size: 5rem;
 }
 .boxes{
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1.5rem;
@@ -77,27 +140,88 @@ position: inherit;
 }
 .box{
     border: 1px black ridge;
-    height: 10rem;
-
-    
-}
+    height: 11rem;
+ }
 
 .contact{
-    height:60vh;
+    height:70vh;
     border-bottom: 1px red solid;
 }
 .contact h1{
     text-align: center;
     font-size: 5rem;
 }
-.contact form{
- margin-top: 10%;
-}
-.column-centered{
+.form{
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 3%;
 }
-.label{
-    margin-right: 2%;
+form{
+    width: 90%;
+    max-width: 600px;
+
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    color: black;
+    padding: 10px;
+    cursor:text;
+    transition: 0.5s;
+}
+.form button{
+    padding: 10px;
+    color:black;
+    outline: none;
+    background: transparent;
+    border:1px solid black;
+    width: 100%;
+    cursor: pointer;
+
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black ;
+    color:black;
+    background: transparent;
+    font-size: 15px;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,textarea:valid~label{
+    top:-35px;
+    font-size: 14px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row .input-group{
+    flex-basis: 45%;
+}
+
+
+/*========================================FOOTER========================================*/
+.three{
+    width: 90%;
+    height: 4vh;   
+}
+p{
+    display:flex;
+    justify-content: center;
+}
+
+.icons{
+    float: right;
+    
 }
