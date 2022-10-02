@@ -1,16 +1,24 @@
 *{
     margin: 0;
     padding:0;
+    list-style: none;
+    text-decoration: none;
 }
-
+body{
+    background: url(../images/5804713.jpg);
+}
 /*=================================HEADER=====================================================*/
 .one{
+    background: url(../images/cat-han-W_5Eakb1598-unsplash.jpg);
 height: 100vh;
 width: 90vw;
-margin-left: 5vw;
+margin-left: 6vw;
+margin-top: 3%;
 border-bottom: 1px red solid;
-background: url(../images/cat-han-W_5Eakb1598-unsplash.jpg);
+position:relative;
 }
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -19,14 +27,35 @@ nav{
 }
 ul{
     display: flex;
-    align-items: center;
+   align-items: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    height:4em;
+    width:50em;
+    justify-content: center;
 }
 ul li{
-    list-style: none;
-    margin-right: 1.5rem;
+    flex-basis: 33%;
+    padding-left: 10%;
+    padding-top: 0;
+    line-height: 55px;
 }
-ul li a{
-    text-decoration: none;
+ul li a {
+    background-color: transparent;
+    transition: font-size 1s;
+    font-size: 1.2em;
+    color: #484848;
+    border: 1px transparent solid;
+    border-radius: 40px;
+    padding: 0.4em;
+}
+
+a:hover{
+    font-size: 1.5em;
+    background-color: #484848;
+    color: #fff;
+
 }
 #logo{
     height: 80px;
@@ -35,24 +64,56 @@ ul li a{
     margin-top: 15px;
     margin-left: 40px;
 }
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    width:100%;
+}
+
 .name{
-    width:70%;
+    width:60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 4em;
+    font-family: 'Angkor',cursive;
+    cursor: default;
+}
+.oneimage{
+   width: 30%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+#oneimage{
+    width: 30em;
+    height: 30em;
+    border-radius: 300px;
+
+}
+.name h1{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 4em;
+    color:#fff;
+    margin-left: 5%;
+}
+.first-name{
+margin-left: 5%;
+}
+.last-name{
+margin-left: 5%;
 }
 
 .first-name span{
     display: inline-block;
     font-weight: bolder;
-    font-size: 100px;
+    font-size: 4em;
     color:#fff;
     animation: mover 6s linear infinite;
 }
 @keyframes mover{
     0%{
-        text-shadow: 0 0 30px rgba(0,0,0,0);
+        text-shadow: 0 0 30px rgb(251, 247, 247);
     }
     50%{
         text-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -66,7 +127,7 @@ ul li a{
 .last-name span{
     display: inline-block;
     font-weight: bolder;
-    font-size: 100px;
+    font-size: 4em;
     color: #fff;
     animation: mover 6s linear infinite;
 }
@@ -95,37 +156,79 @@ span:nth-child(8){
     animation-delay: 4.0s;
 }
 
+
 /*========================================CONTENT=========================================*/
 .two{
 width: 90vw;
-margin-left: 5vw;
+margin-left: 6vw;
+
 }
 .skill{
+    display: flex;
+    margin-top: 1%;
     height:60vh;
     border-bottom: 1px red solid;
-position: inherit;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(101, 3, 3));
+}
+.content-container{
+width:70%;
+margin-right: 10%;
+margin-top: 5%;
+}
+.skill-image{
+  width: 30%; 
+}
+#skill-image{
+    display: block;
+margin-left: 40%;
+margin-right: auto;
+width: 90%;
+margin-top: 20%;
+height:60%;
+border-radius: 1000px;
 }
 .skill h1{
-    text-align: center;
-    font-size: 5rem;
+    text-align: right;
+    font-size: 6rem;
+    margin-right: 15px;
+    color: white;
+    position: static;
+    text-shadow: 2px 2px 6px red;
 }
 .btnn{
-    display: grid;
-    justify-content: center;
-    width: 60%;
-    margin-left: 20%;
-   grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 60px;
-   row-gap:40px ;
-   margin-top:15%;
+    display: flex;
+    justify-content: right;
+    margin-top: 4%;
+    margin-right: 160px;
+}
+.btnn_{
+    display: flex;
+    justify-content: right;
+    margin-right: 180px;
+}
+.btn{
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 4px;
+    width:6em;
+    height: 3em;
+    color:#fff;
+    background:#484848 ;
+    box-shadow: 10px 10px 30px 5px rgb(2, 44, 44);
+    transition: height 1s, width 1s;
+}
+.btn:hover{
+height:3.2em;
+width:6.5em;
+background:rgb(25, 25, 25);
+color: rgb(101, 3, 3);
 }
 .project{
     height:100vh;
+    width: 90%;
     border-bottom: 1px red solid;
-    width:90%;
     margin-left: 5%;
-
-
+    background: url(../images/cat-han-W_5Eakb1598-unsplash.jpg);
 }
 .project h1{
     text-align: center;
@@ -135,17 +238,25 @@ position: inherit;
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1.5rem;
-    row-gap: 2rem;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 .box{
-    border: 1px black ridge;
-    height: 11rem;
+   /*border: 1px black ridge;*/
+    height: 15rem;
+    width: 15rem;
+ }
+ .image{
+    height:14rem;
  }
 
 .contact{
     height:70vh;
     border-bottom: 1px red solid;
+    background-image: radial-gradient(circle, rgb(16, 16, 16), rgb(32, 32, 31), rgb(80, 12, 2));
 }
 .contact h1{
     text-align: center;
@@ -157,11 +268,12 @@ position: inherit;
     justify-content: center;
 }
 form{
+    margin-top: 4rem;
     width: 90%;
     max-width: 600px;
 
 }
-label{
+.contact label{
     height: 100%;
     position: absolute;
     left: 0;
@@ -222,6 +334,5 @@ p{
 }
 
 .icons{
-    float: right;
-    
+    float: right; 
 }
